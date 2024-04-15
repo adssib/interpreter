@@ -13,7 +13,7 @@ public class Test {
         File[] files = folder.listFiles();
         if (files != null) {
             for (File file : files) {
-                if (file.isFile() && file.getName().endsWith(".ads")) {
+                if (file.isFile() && file.getName().endsWith(".adsb")) {
                     filesList.add(file.getAbsolutePath());
                 } else if (file.isDirectory()) {
                     listFiles(file.getAbsolutePath(), filesList);
